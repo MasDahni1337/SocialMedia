@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include "styles/head.html"%}
+
+<body>
+
+    <!-- Pageloader -->
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+    <div class="signup-wrapper">
+
+        <!--Fake navigation-->
+        <div class="fake-nav">
+            <a href="index.html" class="logo">
+                <img class="light-image" src="{% static 'img/logo/simple-guna-bold.png' %}" width="112" height="28" alt="" style="margin-top: 30px;">
+                <img class="dark-image" src="{% static 'img/logo/simple-guna-bold.png' %}" width="112" height="28" alt="" style="margin-top: 30px;">
+            </a>
+        </div>
+
+        <div class="container">
+            <!--Container-->
+            <div class="login-container is-centered">
+                <div class="columns is-vcentered">
+                    <div class="column">
+
+                        <h2 class="form-title has-text-centered">Hallo Bro</h2>
+                        <h3 class="form-subtitle has-text-centered">Belum daftar ya? yuk daftar sekarang.</h3>
+
+                        <!--Form-->
+                        <div class="login-form">
+                            <form enctype="multipart/form-data" method="POST">
+                                {% csrf_token %}
+                                <div class="form-panel">
+                                    <div class="columns is-multiline">
+                                        <div class="column is-6">
+                                            <div class="field">
+                                                <label>Nama Depan</label>
+                                                <div class="control">
+                                                    <input type="text" class="input" name="nama_depan" placeholder="Masukkan nama depan">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is-6">
+                                            <div class="field">
+                                                <label>Nama Belakang</label>
+                                                <div class="control">
+                                                    <input type="text" class="input" name="nama_belakang" placeholder="Masukkan nama belakang">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is-12">
+                                            <div class="field">
+                                                <label>Username</label>
+                                                <div class="control">
+                                                    <input type="text" class="input" name="username" placeholder="Masukkan email address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is-12">
+                                            <div class="field">
+                                                <label>Email</label>
+                                                <div class="control">
+                                                    <input type="text" class="input" name="email" placeholder="Masukkan email address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is-12">
+                                            <div class="field">
+                                                <label>Password</label>
+                                                <div class="control">
+                                                    <input type="password" class="input" name="password" placeholder="Masukkan passowrd">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="column is 12">
+                                            <div class="field">
+                                                <label>Foto Profile</label>
+                                                <input type="file" name="foto_profile" accept="image/*" id="id_foto_profile">
+                                            </div>
+                                        </div>
+                                        <div class="column is-12">
+                                        <!-- ini space -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buttons mt-2">
+                                    <input type="submit" class="button is-solid primary-button is-fullwidth raised" value="Submit">
+                                    
+                                </div>
+                            </form>
+
+
+                            <div class="account-link has-text-centered">
+                                <a href="/" target="_blank">Udah punya akun? masuk yuk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include "styles/foot.html"%}
+
+    <script src="{% static 'js/signup.js' %}"></script>
+    
+</body>
+</html>

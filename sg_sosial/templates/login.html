@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include "styles/head.html"%}
+
+<body class="is-white">
+
+    <!-- Pageloader -->
+    <div class="pageloader"></div>
+    <div class="infraloader is-active"></div>
+    <div class="login-wrapper">
+
+        <!-- Main Wrapper -->
+        <div class="login-wrapper columns is-gapless">
+            <!--Left Side (Desktop Only)-->
+            <div class="column is-6 is-hidden-mobile hero-banner">
+                <div class="hero is-fullheight is-login">
+                    <div class="hero-body">
+                        <div class="container">
+                            <div class="left-caption">
+                                <h2>Hayuk Masuk SimpleGuna ^_^.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Right Side-->
+            <div class="column is-6">
+                <div class="hero form-hero is-fullheight">
+                    <!--Logo-->
+                    <div class="logo-wrap">
+                        <div class="wrap-inner">
+                            <img src="{% static 'img/logo/simple-guna-wblack.png' %}" alt="">
+                        </div>
+                    </div>
+                    <!--Login Form-->
+                    <div class="hero-body">
+                        <div class="form-wrapper">
+                            <!--Avatar-->
+                            <div class="avatar">
+                                <div class="badge">
+                                    <i data-feather="check"></i>
+                                </div>
+                                <img src="https://placehold.it/128x128" data-demo-src="{% static 'img/profile/me2.jpg' %}" alt="">
+                            </div>
+                            <!--Form-->
+                            <div class="login-form">
+                                <form action="{% url 'login' %}" method="POST">
+                                    {% csrf_token %}
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input email-input" type="text" name="username" placeholder="username">
+                                        <div class="input-icon">
+                                            <i data-feather="user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input password-input" type="password" name="password" placeholder="●●●●●●●">
+                                        <div class="input-icon">
+                                            <i data-feather="lock"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="submit" class="button is-solid primary-button raised is-rounded is-fullwidth" value="Login">
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="section forgot-password">
+                                <div class="has-text-centered">
+                                    <a href="/daftar" target="_blank">Belum punya akun? yuk daftar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include "styles/foot.html"%}
+
+    <!-- Landing page js -->
+
+    <!-- Signup page js -->
+
+    <!-- Feed pages js -->
+
+    <!-- profile js -->
+
+    <!-- stories js -->
+
+    <!-- friends js -->
+
+    <!-- questions js -->
+
+    <!-- video js -->
+
+    <!-- events js -->
+
+    <!-- news js -->
+
+    <!-- shop js -->
+
+    <!-- inbox js -->
+
+    <!-- settings js -->
+
+    <!-- map page js -->
+
+    <!-- elements page js -->
+</body>
+
+
+<!-- Mirrored from friendkit.cssninja.io/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Jun 2021 13:51:15 GMT -->
+</html>
