@@ -1,5 +1,6 @@
 # Social Media With Django
 
+## [INFO]
 ```
 Move folder img to assets
 ```
