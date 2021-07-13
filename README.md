@@ -31,6 +31,6 @@ TIME_ZONE = 'Asia/Jakarta' #change with your time zone
 <img src="ss/home-page-2.png" width="650px">
 
 ### Comment
-<img src="ss/comment.png" height="500px" width="100%">
+<img src="ss/comment.png" width="400px">
 
 if you want to work together and help develop this social media, just pull request
