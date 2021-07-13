@@ -21,7 +21,7 @@ TIME_ZONE = 'Asia/Jakarta' #change with your time zone
 
 ## Screenshoot / Demo
 ### Login page
-<img src="ss/login.png">
+<img src="ss/login.png" width="650px">
 
 ### Register Page
 <img src="ss/regis.png">
