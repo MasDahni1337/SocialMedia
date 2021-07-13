@@ -5,6 +5,7 @@
 Move folder img to assets
 ```
 
+## [CONFIGURATION]
 Set your database and time zome in `SimpleGuna/settings.py`
 
 ```python
