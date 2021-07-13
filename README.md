@@ -24,13 +24,13 @@ TIME_ZONE = 'Asia/Jakarta' #change with your time zone
 <img src="ss/login.png" width="650px">
 
 ### Register Page
-<img src="ss/regis.png">
+<img src="ss/regis.png" width="650px">
 
 ### Home page
-<img src="ss/home-page.png">
-<img src="ss/home-page-2.png">
+<img src="ss/home-page.png" width="650px">
+<img src="ss/home-page-2.png" width="650px">
 
 ### Comment
-<img src="ss/comment.png">
+<img src="ss/comment.png" height="500px" width="100%">
 
 if you want to work together and help develop this social media, just pull request
